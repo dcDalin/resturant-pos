@@ -1,7 +1,7 @@
 /**
  * Entry point of the Election app.
  */
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, Menu } from "electron";
 import * as path from "path";
 
 let mainWindow: Electron.BrowserWindow | null;
@@ -20,7 +20,13 @@ function createWindow() {
 	mainWindow.loadFile(path.join(__dirname, "../build/index.html"));
 
 	// Open the DevTools.
-	mainWindow.webContents.openDevTools();
+	// mainWindow.webContents.openDevTools();
+
+	const template: any = [];
+
+	const menu = Menu.buildFromTemplate(template);
+
+	Menu.setApplicationMenu(menu);
 
 	// Emitted when the window is closed.
 	mainWindow.on("closed", () => {
