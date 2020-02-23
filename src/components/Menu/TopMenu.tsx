@@ -1,11 +1,12 @@
 import React from "react";
 import { Menu, Button, Icon, Image } from "semantic-ui-react";
+import styles from "./TopMenu.module.scss";
 const wib = require("../../assets/wib.png");
 
 const TopMenu = () => {
 	return (
 		<Menu size="massive">
-			<Image src={wib} size="tiny" />
+			<Image src={wib} size="tiny" className={styles.logo} />
 			<Menu.Menu position="right">
 				<Button icon>
 					<Icon name="world" />
