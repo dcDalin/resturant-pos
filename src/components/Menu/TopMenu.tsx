@@ -5,7 +5,7 @@ const wib = require("../../assets/wib.png");
 
 const TopMenu = () => {
 	return (
-		<Menu size="massive">
+		<Menu size="massive" className={styles.topMenu}>
 			<Image src={wib} size="tiny" className={styles.logo} />
 			<Menu.Menu position="right">
 				<Button icon>

@@ -1,0 +1,18 @@
+.homeWrapper {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.leftWrapper {
+	padding: 0px !important;
+	overflow: auto !important;
+	height: 100vh !important;
+	background-color: #f1f2f6 !important;
+	overflow-y: scroll !important;
+}
+
+.rightWrapper {
+	padding: 0px !important;
+	overflow: auto !important;
+	max-height: 100vh !important;
+}
